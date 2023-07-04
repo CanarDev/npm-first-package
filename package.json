@@ -1,10 +1,10 @@
 {
   "name": "canardev-first-package",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "description": "",
-  "main": "index.js",
+  "main": "randomNumber.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha tests/*.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/CanarDev/npm-first-package/issues"
   },
-  "homepage": "https://github.com/CanarDev/npm-first-package#readme"
+  "homepage": "https://github.com/CanarDev/npm-first-package#readme",
+  "dependencies": {
+    "mocha": "^10.2.0"
+  }
 }

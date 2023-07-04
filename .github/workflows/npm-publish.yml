@@ -4,6 +4,16 @@ on:
     branches:
       - main # Change this to your default branch
 jobs:
+  mocha:
+    name: mocha
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Install dependencies
+        run: npm install
+      - name: Run tests
+        run: npm test
   npm-publish:
     name: npm-publish
     runs-on: ubuntu-latest
