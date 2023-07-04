@@ -1,10 +1,11 @@
 {
   "name": "canardev-first-package",
-  "version": "1.7.6",
+  "version": "1.7.7",
   "description": "",
   "main": "randomNumber.js",
   "scripts": {
-    "test": "mocha tests/*.js"
+    "test": "mocha tests/*.js",
+    "eslint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,8 @@
   "homepage": "https://github.com/CanarDev/npm-first-package#readme",
   "dependencies": {
     "mocha": "^10.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.44.0"
   }
 }
